@@ -3,7 +3,7 @@
 * Revised: Lam
 * Version: 1.0.0
 * Date: 2018-10-06
-* Abstract: Code for a timer.
+* Abstract: The `picop.cpp` is my test file, which is the base of the make-version timer. System control it through some `if...` and `sleep`, and it can run properly. However, I can't `make` through `main.cpp` `timer.cpp` `timer.h`, which are consist of the make-version timer. So I can't judge whether they are correct.
 ***
 **Required**
 

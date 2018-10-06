@@ -45,9 +45,9 @@ void* Timer::startTiming(void* args)
 		point = std::chrono::steady_clock::now();
 		spend = std::chrono::duration_cast<std::chrono::milliseconds>(point - begin);
 		time1 = spend.count()/0.1;
-		if(ptime1 != time1) //terminal output
+		if(ptime1/10 != time1/10) //terminal output
 		{
-			std::cout << time1 << std::endl;
+			std::cout << time1/10 << std::endl;
 			ptime1 = time1;
 		}
 		if(ptime2 != time2) //wimdow output
@@ -87,9 +87,9 @@ void* Timer::resume(void* args)
                 point = std::chrono::steady_clock::now();
                 spend = std::chrono::duration_cast<std::chrono::milliseconds>(point - begin);
                 time1 = spend.count()/0.1;
-                if(ptime1 != time1) //terminal output
+                if(ptime1/10 != time1/10) //terminal output
                 {
-                        std::cout << time1 << std::endl;
+                        std::cout << time1/10 << std::endl;
                         ptime1 = time1;
                 }
                 if(ptime2 != time2) //wimdow output
