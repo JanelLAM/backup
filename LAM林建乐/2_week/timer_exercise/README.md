@@ -23,4 +23,4 @@ g++ picop.cpp `pkg-config opencv --cflags --libs`  -lpthread
 ```
 ***
 **Expected Output**
-
+！[Github](backup/LAM林建乐/2_week/timer_exercise/output.png )
